@@ -1,0 +1,9 @@
+.private-btn{
+    background-color: #3a68b8;
+    color: #fff;
+    
+    opacity: 1;
+}
+.private-btn:hover{
+    opacity: .8;
+}
