@@ -1,9 +1,27 @@
-.private-btn{
-    background-color: #3a68b8;
+.same-btn{
+    border-radius: 5px;
+    background: #3a68b8;
+    border-color: transparent;
     color: #fff;
-    
-    opacity: 1;
+    font-size: 18px;
+
 }
-.private-btn:hover{
-    opacity: .8;
+
+
+.sign-in-btn {
+
+    width: 100px;
+    height: 40px;
+
 }
+
+.get-started-btn {
+    width: 140px;
+    height: 50px;
+   
+}
+.watch-video-btn {
+    width: 160px;
+    height: 50px;
+}
+

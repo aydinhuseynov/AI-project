@@ -1,0 +1,51 @@
+.navbarBgColor{
+    background-color: #0A111F;
+}
+
+.logoNavbar{
+width: 200px;
+}
+.navbarIcon{
+    color: #fff;
+    border-color: #fff;
+}
+@media(min-width:1080px){
+    .logoNavbar{
+        margin-left: 80px;
+    }
+}
+.overlayMenu{
+background-color: rgba(0,0,0,.8);
+height: 100vh;
+position: fixed;
+width: 0%;
+overflow-x: hidden;
+z-index: 999;
+font-size: 30px;
+transition: width 1s ease ;
+
+}
+.x_Icon{
+    position: absolute;
+    color: #fff;
+    right: 30px;
+    top: 30px;
+
+}
+.nav_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.nav_links a{
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+    transition: ease all 0.7s;
+}
+.nav_links a:hover{
+    opacity: 0.6;
+   transform: scale(1.2);
+}

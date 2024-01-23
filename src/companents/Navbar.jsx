@@ -1,16 +1,40 @@
 import Logo from "../assets/images/logo.svg";
 import Button from "../companents/Button";
 import { AiOutlineBars } from "react-icons/ai";
-
+import { GiCrossMark } from "react-icons/gi";
+import styles from "../assets/css/navbar.module.css";
+import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
+const overlayMenu =useRef();
+
+const openOverlayMenu = ()=>{overlayMenu.current.style.width = "100%"}
+const closeOverlayMenu = ()=>{overlayMenu.current.style.width = "0%"}
+
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+   <>
+<div ref={overlayMenu} className={`${styles.overlayMenu}`}>
+  
+<GiCrossMark onClick={closeOverlayMenu} className={`${styles.x_Icon}`} />
+
+<nav className={`${styles.nav_links}`}>
+<button className="btn btn-outline-primary">Sign in</button>
+  <Link to="/" className="nav-link text-white">Home</Link>
+  <Link to="/about" className="nav-link text-white">About</Link>
+  <a href="" className="nav-link text-white">Services</a>
+  <a href="" className="nav-link text-white">Contact</a>
+  <a href="" className="nav-link text-white" >Links</a>
+</nav>
+
+</div>
+<nav className={`navbar navbar-expand-lg  ${styles.navbarBgColor}`}>
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          <img src={Logo} />
+          <img src={Logo} className={`${styles.logoNavbar}`} />
         </a>
         <button
+onClick={openOverlayMenu}
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -19,42 +43,46 @@ function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <AiOutlineBars/>
-
+          <AiOutlineBars className={`${styles.navbarIcon}`} />
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <Link
+                className="nav-link active text-white"
+                aria-current="page"
+                to="/"
+              >
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link text-white" to="/about">
                 About
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link text-white" href="#">
                 Services
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link text-white" href="#">
                 Conatc
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Link
-              </a>
+              <Link className="nav-link text-white" to="/faq">
+                FAQ 
+              </Link>
             </li>
           </ul>
-          < Button/>
-
+          <Button insideText="Sigin in" nameOfClass="sign-in-btn" />
         </div>
       </div>
     </nav>
+
+   </>
   );
 }
 

@@ -1,0 +1,28 @@
+.solutions{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.solition-comments{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 500px;
+}
+.solition-left-side p{
+  color: #FFF;
+  opacity: 0.6;
+  margin-top: 1rem;
+}
+.solition-right-side{
+    padding: 99px 5px 0 0;
+    width: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.solition-right-side img{
+    width: 100%;
+}

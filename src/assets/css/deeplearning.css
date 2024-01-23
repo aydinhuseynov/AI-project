@@ -1,0 +1,28 @@
+.deep-learning-section{
+    background: #020A18;
+}
+.deepText{
+    opacity: 0.5;
+}
+.deeplearning-left-side{
+    width: 500px;
+}
+.deeplearning-left-side img{
+    width: 100%;
+}
+.deeplearning-right-side{
+    padding-top: 40px;
+}
+
+@media(max-width:767px){
+    .deep-learning-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .deeplearning-left-side{
+        width: 280px;
+       position: relative;
+       left: 1.7rem;
+    }
+   
+}
