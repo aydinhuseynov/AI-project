@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./companents/Home";
 import About from "./companents/About";
 import FAQ from "./companents/FAQ";
+import LoginSignup from './companents/LoginSignup';
 
 function App() {
   useEffect(() => {
@@ -18,11 +19,11 @@ function App() {
     <>
       <BrowserRouter>
         <Navbar />
-
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>}/>
           <Route path="/faq" element={<FAQ/>}/>
+          <Route path='/loginSignup' element={<LoginSignup/>}/>
         </Routes>
 
       

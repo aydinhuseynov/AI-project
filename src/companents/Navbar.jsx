@@ -1,5 +1,4 @@
 import Logo from "../assets/images/logo.svg";
-import Button from "../companents/Button";
 import { AiOutlineBars } from "react-icons/ai";
 import { GiCrossMark } from "react-icons/gi";
 import styles from "../assets/css/navbar.module.css";
@@ -19,12 +18,13 @@ const closeOverlayMenu = ()=>{overlayMenu.current.style.width = "0%"}
 <GiCrossMark onClick={closeOverlayMenu} className={`${styles.x_Icon}`} />
 
 <nav className={`${styles.nav_links}`}>
-<button className="btn btn-outline-primary">Sign in</button>
   <Link to="/" className="nav-link text-white">Home</Link>
   <Link to="/about" className="nav-link text-white">About</Link>
   <a href="" className="nav-link text-white">Services</a>
   <a href="" className="nav-link text-white">Contact</a>
-  <a href="" className="nav-link text-white" >Links</a>
+  <Link to="/faq" className="nav-link text-white" >FAQ</Link>
+  <button className="btn btn-outline-primary mt-2"><Link to="/loginSignup" className={`${styles.signUP}`}>Sign up</Link></button>
+
 </nav>
 
 </div>
@@ -77,7 +77,7 @@ onClick={openOverlayMenu}
               </Link>
             </li>
           </ul>
-          <Button insideText="Sigin in" nameOfClass="sign-in-btn" />
+          <button className="btn btn-primary"><Link to="/loginSignup" className={`${styles.signUP}`}>Sign up</Link></button>
         </div>
       </div>
     </nav>

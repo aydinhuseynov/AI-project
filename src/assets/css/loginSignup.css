@@ -1,0 +1,103 @@
+.main-signup-login{
+    height: 100vh;
+    background: linear-gradient(#2a00b7,#42006c);
+    display: flex;
+    align-items: center;
+  
+}
+.containerr{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+    background: #fff;
+    padding-bottom: 30px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    margin-top: 10px;
+}
+.text{
+    color: #3c009d;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.underline{
+    width: 61px;
+    height: 6px;
+    border-radius: 9px;
+    background: #3c009d;
+}
+.inputs{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.input{
+      display: flex;
+      align-items: center;
+      margin: auto;
+      width: 340px;
+      height: 60px;
+      background: #eaeaea;
+      border-radius: 6px;
+}
+.input img{
+    margin: 0px 30px;
+}
+.input input{
+    height: 40px;
+    width:200px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #797979;
+    font-size: 19px;
+}
+.forgot-password{
+    padding-left: 82px;
+    margin-top: 27px;
+    color: #797979;
+    font-size: 18px;
+}
+.forgot-password span{
+    color: #4c00b4;
+    cursor: pointer;
+}
+.forgot-password span:hover{
+    text-decoration: underline;
+    color: red;
+}
+.submit-container{
+    display: flex;
+    gap: 30px;
+    margin: 40px auto 0 auto;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 40px;
+    color: #fff;
+    background: #4c00b4;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.submit:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.gray{
+    background: #eaeaea;
+    color: #676767;
+}

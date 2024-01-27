@@ -17,6 +17,10 @@
     margin-top: 10px;
     padding: 5px 20px;
     border-radius: 5px;
+    transition: all 1s ease;
+}
+.item:hover{
+    transform: scale(1.05);
 }
 .title{
     color: #85662b;

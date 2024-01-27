@@ -3,7 +3,7 @@ import "../assets/css/about.css";
 function About() {
   return (
     <>
-      <div style={{background:"#23272F"}} className="main-div">
+      <div  className="main-div">
         <div className="container ">
           <div className="about-section row">
             <h1 className="text-center text-white m-2 mt-0 shadow rounded " style={{backgroundColor:"#0082FB",width:"100%"}}>About Us</h1>

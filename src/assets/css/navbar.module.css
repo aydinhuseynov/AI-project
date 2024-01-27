@@ -49,3 +49,8 @@ transition: width 1s ease ;
     opacity: 0.6;
    transform: scale(1.2);
 }
+.signUP{
+    text-decoration: none;
+    font-size: 18PX;
+    color: #fff;
+}
