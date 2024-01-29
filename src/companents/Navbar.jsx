@@ -20,8 +20,8 @@ const closeOverlayMenu = ()=>{overlayMenu.current.style.width = "0%"}
 <nav className={`${styles.nav_links}`}>
   <Link to="/" className="nav-link text-white">Home</Link>
   <Link to="/about" className="nav-link text-white">About</Link>
-  <a href="" className="nav-link text-white">Services</a>
-  <a href="" className="nav-link text-white">Contact</a>
+  <Link to="/services" className="nav-link text-white">Services</Link>
+  <Link to="/contact" className="nav-link text-white">Contact</Link>
   <Link to="/faq" className="nav-link text-white" >FAQ</Link>
   <button className="btn btn-outline-primary mt-2"><Link to="/loginSignup" className={`${styles.signUP}`}>Sign up</Link></button>
 
@@ -62,14 +62,14 @@ onClick={openOverlayMenu}
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="#">
+              <Link className="nav-link text-white" to="/services">
                 Services
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="#">
-                Conatc
-              </a>
+              <Link className="nav-link text-white" to="/contact">
+                Contact
+              </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link text-white" to="/faq">

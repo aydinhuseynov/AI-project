@@ -5,7 +5,7 @@ form {
     margin: 40px auto;
     max-width: 700px;
     max-height: 600px;
-    padding: 20px;
+    padding:20px  40px;
 }
 
 form input,
@@ -15,4 +15,24 @@ textarea {
     width: 100%;
     margin: 10px auto;
     padding: 10px;
+    font-family: sans-serif;
+    background-color: #ddd;
+    border: 1px solid  #ddd;
+    border-radius: 5px;
+}
+form span{
+    color: rgb(29,185,237);
+}
+form button{
+    height: 30px;
+    width: 80px;
+    align-items: center;
+    border: none;
+    background-color: rgb(29,185,237);
+    color: #fff;
+    border-radius: 3px;
+}
+form button:hover{
+    background-color: rgb(29, 164, 237);
+    cursor: pointer;
 }

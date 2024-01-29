@@ -10,6 +10,8 @@ import Home from "./companents/Home";
 import About from "./companents/About";
 import FAQ from "./companents/FAQ";
 import LoginSignup from './companents/LoginSignup';
+import Contact from './companents/Contact';
+import Services from './companents/Services';
 
 function App() {
   useEffect(() => {
@@ -24,6 +26,8 @@ function App() {
           <Route path="/about" element={<About/>}/>
           <Route path="/faq" element={<FAQ/>}/>
           <Route path='/loginSignup' element={<LoginSignup/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/services' element={<Services/>}/>
         </Routes>
 
       
