@@ -4,7 +4,7 @@ import Navbar from "./companents/Navbar";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Fotter from "./companents/Fotter";
+import Footer from "./companents/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./companents/Home";
 import About from "./companents/About";
@@ -32,7 +32,7 @@ function App() {
 
       
 
-        <Fotter />
+        <Footer />
       </BrowserRouter>
     </>
   );

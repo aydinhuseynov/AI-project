@@ -3,6 +3,7 @@
     background: #0F1724;
     transition: 1s ease all;
     /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    padding: 10px;
 
     
 }
@@ -12,18 +13,23 @@
 .award h1{
     font-size: 20px;
     margin: 10px 0;
+    text-align: center;
 }
 .award p{
     padding-left: 3px;
     font-size: 18px;
-    text-align: left;
+    text-align: center;
 }
 
 .awardsOfPic{
     display: flex;
     align-items: center;
     justify-content: center;
+    
    
+}
+.awardsOfPic img{
+    width: 72px;
 }
 
 .mainAwards{
