@@ -6,83 +6,104 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-const overlayMenu =useRef();
+  const overlayMenu = useRef();
 
-const openOverlayMenu = ()=>{overlayMenu.current.style.width = "100%"}
-const closeOverlayMenu = ()=>{overlayMenu.current.style.width = "0%"}
+  const openOverlayMenu = () => {
+    overlayMenu.current.style.width = "100%";
+  };
+  const closeOverlayMenu = () => {
+    overlayMenu.current.style.width = "0%";
+  };
 
   return (
-   <>
-<div ref={overlayMenu} className={`${styles.overlayMenu}`}>
-  
-<GiCrossMark onClick={closeOverlayMenu} className={`${styles.x_Icon}`} />
+    <>
+      <div ref={overlayMenu} className={`${styles.overlayMenu}`}>
+        <GiCrossMark
+          onClick={closeOverlayMenu}
+          className={`${styles.x_Icon}`}
+        />
 
-<nav className={`${styles.nav_links}`}>
-  <Link to="/" className="nav-link text-white">Home</Link>
-  <Link to="/about" className="nav-link text-white">About</Link>
-  <Link to="/services" className="nav-link text-white">Services</Link>
-  <Link to="/contact" className="nav-link text-white">Contact</Link>
-  <Link to="/faq" className="nav-link text-white" >FAQ</Link>
-  <button className="btn btn-outline-primary mt-2"><Link to="/loginSignup" className={`${styles.signUP}`}>Sign up</Link></button>
-
-</nav>
-
-</div>
-<nav className={`navbar navbar-expand-lg  ${styles.navbarBgColor}`}>
-      <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          <img src={Logo} className={`${styles.logoNavbar}`} />
-        </a>
-        <button
-onClick={openOverlayMenu}
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <AiOutlineBars className={`${styles.navbarIcon}`} />
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <Link
-                className="nav-link active text-white"
-                aria-current="page"
-                to="/"
-              >
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link text-white" to="/about">
-                About
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link text-white" to="/services">
-                Services
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link text-white" to="/contact">
-                Contact
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link text-white" to="/faq">
-                FAQ 
-              </Link>
-            </li>
-          </ul>
-          <button className="btn btn-primary"><Link to="/loginSignup" className={`${styles.signUP}`}>Sign up</Link></button>
-        </div>
+        <nav className={`${styles.nav_links}`}>
+          <Link to="/" className="nav-link text-white">
+            Home
+          </Link>
+          <Link to="/about" className="nav-link text-white">
+            About
+          </Link>
+          <Link to="/services" className="nav-link text-white">
+            Services
+          </Link>
+          <Link to="/contact" className="nav-link text-white">
+            Contact
+          </Link>
+          <Link to="/faq" className="nav-link text-white">
+            FAQ
+          </Link>
+          <button className="btn btn-outline-primary mt-2">
+            <Link to="/loginSignup" className={`${styles.signUP}`}>
+              Sign up
+            </Link>
+          </button>
+        </nav>
       </div>
-    </nav>
-
-   </>
+      <nav className={`navbar navbar-expand-lg  ${styles.navbarBgColor}`}>
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
+            <img src={Logo} className={`${styles.logoNavbar}`} />
+          </a>
+          <button
+            onClick={openOverlayMenu}
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <AiOutlineBars className={`${styles.navbarIcon}`} />
+          </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <Link
+                  className="nav-link active text-white"
+                  aria-current="page"
+                  to="/"
+                >
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link text-white" to="/about">
+                  About
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link text-white" to="/services">
+                  Services
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link text-white" to="/contact">
+                  Contact
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link text-white" to="/faq">
+                  FAQ
+                </Link>
+              </li>
+            </ul>
+            <button className="btn btn-primary">
+              <Link to="/loginSignup" className={`${styles.signUP}`}>
+                Sign up
+              </Link>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </>
   );
 }
 
