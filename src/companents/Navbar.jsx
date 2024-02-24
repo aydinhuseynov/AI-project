@@ -4,17 +4,14 @@ import { GiCrossMark } from "react-icons/gi";
 import styles from "../assets/css/navbar.module.css";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-
 function Navbar() {
   const overlayMenu = useRef();
-
   const openOverlayMenu = () => {
     overlayMenu.current.style.width = "100%";
   };
   const closeOverlayMenu = () => {
-    overlayMenu.current.style.width = "0%";
+        overlayMenu.current.style.width = "0%";
   };
-
   return (
     <>
       <div ref={overlayMenu} className={`${styles.overlayMenu}`}>
@@ -22,7 +19,6 @@ function Navbar() {
           onClick={closeOverlayMenu}
           className={`${styles.x_Icon}`}
         />
-
         <nav className={`${styles.nav_links}`}>
           <Link to="/" className="nav-link text-white">
             Home
@@ -49,7 +45,7 @@ function Navbar() {
       <nav className={`navbar navbar-expand-lg  ${styles.navbarBgColor}`}>
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            <img src={Logo} className={`${styles.logoNavbar}`} />
+            <img src={Logo} className={`${styles.logoNavbar}`} alt="logo" />
           </a>
           <button
             onClick={openOverlayMenu}
